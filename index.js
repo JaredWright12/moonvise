@@ -7,7 +7,7 @@ const PORT = 3000;
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/views/home.html');
+  res.sendFile(__dirname + '/home.html');
 });
 
 app.get('/proxy', (req, res) => {
